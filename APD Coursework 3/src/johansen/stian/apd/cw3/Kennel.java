@@ -14,12 +14,15 @@ public class Kennel {
         
         fluffy.play();
         princeHarry.play();
+        fluffy.deleteObserver(haroldsSon);
+        System.out.println("--- Harolds Son no longer observing Fluffy");
         fluffy.play();
         princeHarry.play();
-                
         fluffy.play();
         princeHarry.play();
         fluffy.play();
+        fluffy.addObserver(haroldsSon);
+        System.out.println("--- Harolds Son joined the game, now watching over Fluffy");
         princeHarry.play();
         fluffy.eat();
         princeHarry.eat();
