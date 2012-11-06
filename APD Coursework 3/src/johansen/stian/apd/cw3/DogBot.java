@@ -49,7 +49,7 @@ class DogBot extends Observable {
         }
     }
     
-    private void setChangedAndNotify(Object o){
+    protected void setChangedAndNotify(Object o){
         setChanged();
         notifyObservers(o);
     }

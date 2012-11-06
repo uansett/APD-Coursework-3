@@ -17,7 +17,7 @@ public DogWatcher(Observable dog, String name){
     @Override
     public void update(Observable o, Object arg) {
         if(o instanceof DogBot && arg instanceof String){
-            System.out.println(name + " watches "+((DogBot)o).getName()+" "+arg);
+            System.out.println(name + " watches "+o.getClass().getSimpleName()+" `"+((DogBot)o).getName()+"` "+arg);
         }
     }
     
