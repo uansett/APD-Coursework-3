@@ -22,6 +22,7 @@ public DogWatcher(Observable dog, String name){
                                 +" `"
                                 +((DogBot)o).getName()
                                 +"` "+arg);
+        
         }
     }
     

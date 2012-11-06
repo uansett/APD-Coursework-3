@@ -2,8 +2,8 @@ package johansen.stian.apd.cw3;
 
 class RacingDogBot extends DogBot {
 
-    public RacingDogBot(String n, int h, int t) {
-        super(n, h, t);
+    public RacingDogBot(String name, int hunger, int tiredness) {
+        super(name, hunger, tiredness);
     }
 
     public boolean race() {

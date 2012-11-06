@@ -7,10 +7,10 @@ class DogBot extends Observable {
     protected int hungry, tired;
     private String name;
     
-    public DogBot(String name,int h, int t) {
+    public DogBot(String name, int hunger, int tiredness) {
         this.name = name;
-        hungry = h;
-        tired = t;
+        hungry = hunger;
+        tired = tiredness;
     }
     
     public String getName(){
