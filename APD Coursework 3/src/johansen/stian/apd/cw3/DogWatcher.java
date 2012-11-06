@@ -18,8 +18,7 @@ public DogWatcher(Observable dog, String name){
     public void update(Observable o, Object arg) {
         if(o instanceof DogBot && arg instanceof String){
             System.out.println( name + " observes "
-                                +o.getClass().getSimpleName()
-                                +" `"
+                                +"`"
                                 +((DogBot)o).getName()
                                 +"` "+arg);
         
