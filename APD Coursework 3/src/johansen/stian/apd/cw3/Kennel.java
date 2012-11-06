@@ -22,7 +22,8 @@ public class Kennel {
         princeHarry.play();
         fluffy.play();
         fluffy.addObserver(haroldsSon);
-        System.out.println("--- Harolds Son joined the game, now watching over Fluffy");
+        System.out.println( "--- Harolds Son joined the game, "
+                            + "now watching over Fluffy");
         princeHarry.play();
         fluffy.eat();
         princeHarry.eat();
