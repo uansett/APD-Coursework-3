@@ -14,23 +14,25 @@ public class Kennel {
         System.out.println( "--- Initial: Fluffy is watched over by "
                             + "Harold."
                             + "\nPrince Harry is being watched by Steven."
-                            + "\nMr. Bean is being watched by Harold's Son.");
+                            + "\nMr. Bean is being watched by Harold's Son.\n\n");
         mrBean.play();
         fluffy.play();
         princeHarry.play();
         
         fluffy.addObserver(haroldsSon);
-        System.out.println("Now, both Mr bean and Fluffy is watched over by "
-                            + "Harold's Son.");
+        fluffy.deleteObserver(harold);
+        System.out.println("\nNow, both Mr bean and Fluffy is watched over by "
+                            + "Harold's Son.\n\n");
         
         mrBean.eat();
         fluffy.eat();
         princeHarry.eat();
         
         mrBean.deleteObserver(haroldsSon);
-        System.out.println( "Now, Harold's Son lost Mr Bean out of sight "
+        fluffy.addObserver(harold);
+        System.out.println( "\nNow, Harold's Son lost Mr Bean out of sight "
                             + "and is only watching fluffy together "
-                            + "with Harold.");
+                            + "with Harold.\n\n");
         
         mrBean.rest();
         fluffy.rest();
